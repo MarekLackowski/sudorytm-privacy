@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudorytm — Polityka prywatności / Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25em; margin-top: 2em; border-bottom: 2px solid #eee; padding-bottom: 0.3em; }
+  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  .lang-switch { margin-bottom: 2em; }
+  .lang-switch button {
+    padding: 8px 16px; margin-right: 8px; border: 1px solid #ccc; background: #f5f5f5;
+    border-radius: 6px; cursor: pointer; font-size: 0.95em;
+  }
+  .lang-switch button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-size: 0.95em; vertical-align: top; }
+  th { background: #f7f7f7; }
+  a { color: #0a5fcc; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+  #en { display: none; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button id="btn-pl" class="active" onclick="showLang('pl')">Polski</button>
+  <button id="btn-en" onclick="showLang('en')">English</button>
+</div>
+
+<div id="pl">
+<h1>Polityka prywatności — Sudorytm</h1>
+<div class="updated">Ostatnia aktualizacja: 9 lipca 2026</div>
+
+<p>Niniejsza polityka prywatności opisuje, jakie dane zbiera aplikacja mobilna <strong>Sudorytm</strong> ("Aplikacja"), w jakim celu i komu mogą być przekazywane. Deweloperem Aplikacji jest osoba prywatna, kontakt: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a>.</p>
+
+<h2>1. Jakie dane zbieramy</h2>
+<table>
+  <tr><th>Rodzaj danych</th><th>Kiedy zbierane</th><th>Gdzie przechowywane</th></tr>
+  <tr>
+    <td>Postęp w grze (poziom, XP, osiągnięcia, statystyki, historia gier, ustawienia)</td>
+    <td>Zawsze, od pierwszego uruchomienia</td>
+    <td>Wyłącznie lokalnie na urządzeniu (localStorage) — nie opuszcza telefonu, chyba że włączysz funkcje społecznościowe (patrz niżej)</td>
+  </tr>
+  <tr>
+    <td>Nazwa użytkownika, awatar, poziom, XP, liczba wygranych, osiągnięcia, lista znajomych</td>
+    <td>Tylko jeśli dobrowolnie włączysz funkcje społecznościowe (zakładka "Społeczność")</td>
+    <td>Serwer bazy danych Supabase — umożliwia synchronizację między urządzeniami i funkcje społecznościowe (znajomi, ranking)</td>
+  </tr>
+  <tr>
+    <td>Podstawowe dane profilu Google (adres e-mail, identyfikator konta)</td>
+    <td>Tylko jeśli zalogujesz się przez Google w celu zabezpieczenia postępu</td>
+    <td>Wykorzystywane wyłącznie do uwierzytelnienia i powiązania Twojego konta w grze z kontem Google — zarządzane przez Google/Supabase Auth</td>
+  </tr>
+  <tr>
+    <td>Identyfikator reklamowy urządzenia i dane o interakcji z reklamami</td>
+    <td>Gdy oglądasz reklamę (Google AdMob) — funkcja opcjonalna, dobrowolna ("obejrzyj reklamę za token")</td>
+    <td>Google AdMob — zgodnie z <a href="https://policies.google.com/privacy" target="_blank">polityką prywatności Google</a></td>
+  </tr>
+</table>
+
+<p>Aplikacja <strong>nie zbiera</strong> danych lokalizacyjnych, kontaktów, zdjęć ani innych danych niepowiązanych bezpośrednio z rozgrywką.</p>
+
+<h2>2. Powiadomienia lokalne</h2>
+<p>Aplikacja może wysyłać lokalne przypomnienia (np. o wyzwaniu codziennym) generowane i wyświetlane wyłącznie na Twoim urządzeniu. Nie wiąże się to z przesyłaniem żadnych danych na serwer.</p>
+
+<h2>3. Reklamy i zgoda (UE / Wielka Brytania)</h2>
+<p>Aplikacja korzysta z Google AdMob do wyświetlania reklam nagradzanych (dobrowolnych, w zamian za token podpowiedzi). Jeśli znajdujesz się w Europejskim Obszarze Gospodarczym lub Wielkiej Brytanii, przy pierwszym uruchomieniu może pojawić się formularz zgody na reklamy spersonalizowane (zgodnie z wymogami Google User Messaging Platform). Zgodę możesz w każdej chwili zmienić w Aplikacji: Profil → "Zarządzaj zgodą na reklamy".</p>
+
+<h2>4. Komu udostępniamy dane</h2>
+<ul>
+  <li><strong>Google</strong> — logowanie (Google Sign-In), reklamy (AdMob), usługi Google Play</li>
+  <li><strong>Supabase</strong> — hosting bazy danych dla funkcji społecznościowych (konto, znajomi, ranking)</li>
+</ul>
+<p>Nie sprzedajemy ani nie udostępniamy Twoich danych żadnym innym podmiotom trzecim w celach marketingowych.</p>
+
+<h2>5. Twoje prawa</h2>
+<ul>
+  <li><strong>Dostęp i poprawa danych</strong> — dane profilu (nazwa, awatar) możesz edytować bezpośrednio w Aplikacji.</li>
+  <li><strong>Usunięcie konta i danych</strong> — w Aplikacji: Profil → "Usuń konto i dane" (dostępne jeśli masz aktywne konto społecznościowe). Operacja usuwa trwale Twój profil, osiągnięcia, listę znajomych i powiązania z serwera.</li>
+  <li><strong>Usunięcie bez dostępu do Aplikacji</strong> — jeśli nie masz już zainstalowanej Aplikacji, a chcesz zażądać usunięcia swoich danych, napisz na adres <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a>, podając nazwę użytkownika i tag gracza (np. Nick#AB12). Dane zostaną usunięte w ciągu 30 dni.</li>
+</ul>
+
+<h2>6. Dzieci</h2>
+<p>Aplikacja nie jest kierowana do dzieci poniżej 13 roku życia i nie zbiera świadomie danych od dzieci w tym wieku. Jeśli uważasz, że doszło do takiej sytuacji, skontaktuj się z nami pod adresem podanym powyżej.</p>
+
+<h2>7. Bezpieczeństwo</h2>
+<p>Stosujemy rozsądne środki techniczne i organizacyjne w celu ochrony danych, jednak żadna metoda przesyłania czy przechowywania danych w internecie nie jest w 100% bezpieczna.</p>
+
+<h2>8. Zmiany w polityce prywatności</h2>
+<p>Niniejsza polityka może być okresowo aktualizowana. Data ostatniej zmiany widnieje na górze dokumentu. Kontynuowanie korzystania z Aplikacji po zmianach oznacza akceptację nowej wersji.</p>
+
+<h2>9. Kontakt</h2>
+<p>W sprawach związanych z prywatnością i danymi osobowymi: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a></p>
+</div>
+
+<div id="en">
+<h1>Privacy Policy — Sudorytm</h1>
+<div class="updated">Last updated: July 9, 2026</div>
+
+<p>This privacy policy describes what data the <strong>Sudorytm</strong> mobile app ("the App") collects, why, and who it may be shared with. The App is developed by an individual developer, contact: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a>.</p>
+
+<h2>1. What data we collect</h2>
+<table>
+  <tr><th>Data type</th><th>When collected</th><th>Where stored</th></tr>
+  <tr>
+    <td>Game progress (level, XP, achievements, stats, game history, settings)</td>
+    <td>Always, from first launch</td>
+    <td>Locally on your device only (localStorage) — never leaves your phone unless you enable community features (see below)</td>
+  </tr>
+  <tr>
+    <td>Username, avatar, level, XP, win count, achievements, friends list</td>
+    <td>Only if you voluntarily enable community features ("Community" tab)</td>
+    <td>Supabase database server — enables cross-device sync and social features (friends, leaderboard)</td>
+  </tr>
+  <tr>
+    <td>Basic Google profile data (email address, account identifier)</td>
+    <td>Only if you sign in with Google to secure your progress</td>
+    <td>Used solely to authenticate and link your in-game account to your Google account — managed by Google/Supabase Auth</td>
+  </tr>
+  <tr>
+    <td>Device advertising identifier and ad interaction data</td>
+    <td>When you watch an ad (Google AdMob) — an optional, opt-in feature ("watch an ad for a token")</td>
+    <td>Google AdMob — per <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></td>
+  </tr>
+</table>
+
+<p>The App <strong>does not collect</strong> location data, contacts, photos, or any other data unrelated to gameplay.</p>
+
+<h2>2. Local notifications</h2>
+<p>The App may send local reminders (e.g. about the daily challenge) generated and displayed entirely on your device. No data is transmitted to any server for this purpose.</p>
+
+<h2>3. Ads and consent (EEA / UK)</h2>
+<p>The App uses Google AdMob to show rewarded ads (optional, in exchange for a hint token). If you're located in the European Economic Area or the United Kingdom, a consent form for personalized ads may appear on first launch (per Google User Messaging Platform requirements). You can change your consent at any time in the App: Profile → "Manage ad consent".</p>
+
+<h2>4. Who we share data with</h2>
+<ul>
+  <li><strong>Google</strong> — sign-in (Google Sign-In), ads (AdMob), Google Play services</li>
+  <li><strong>Supabase</strong> — database hosting for community features (account, friends, leaderboard)</li>
+</ul>
+<p>We do not sell or share your data with any other third parties for marketing purposes.</p>
+
+<h2>5. Your rights</h2>
+<ul>
+  <li><strong>Access and correction</strong> — you can edit your profile data (name, avatar) directly in the App.</li>
+  <li><strong>Account and data deletion</strong> — in the App: Profile → "Delete account & data" (available if you have an active community account). This permanently deletes your profile, achievements, friends list, and server-side data.</li>
+  <li><strong>Deletion without access to the App</strong> — if you no longer have the App installed and want to request deletion of your data, email <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a> with your username and player tag (e.g. Nick#AB12). Your data will be deleted within 30 days.</li>
+</ul>
+
+<h2>6. Children</h2>
+<p>The App is not directed at children under 13 and does not knowingly collect data from children under that age. If you believe this has happened, please contact us at the address above.</p>
+
+<h2>7. Security</h2>
+<p>We use reasonable technical and organizational measures to protect data, but no method of transmission or storage over the internet is 100% secure.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>This policy may be updated periodically. The date of the last change is shown at the top of this document. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>For privacy and personal data matters: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a></p>
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('pl').style.display = lang === 'pl' ? '' : 'none';
+  document.getElementById('en').style.display = lang === 'en' ? '' : 'none';
+  document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+</body>
+</html>
