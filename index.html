@@ -17,25 +17,19 @@
   h1 { font-size: 1.6em; margin-bottom: 0.2em; }
   h2 { font-size: 1.25em; margin-top: 2em; border-bottom: 2px solid #eee; padding-bottom: 0.3em; }
   .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
-  .lang-switch { margin-bottom: 2em; }
-  .lang-switch button {
-    padding: 8px 16px; margin-right: 8px; border: 1px solid #ccc; background: #f5f5f5;
-    border-radius: 6px; cursor: pointer; font-size: 0.95em;
-  }
-  .lang-switch button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  .lang-switch { margin-bottom: 2em; font-size: 1.05em; }
   table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th, td { text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-size: 0.95em; vertical-align: top; }
   th { background: #f7f7f7; }
   a { color: #0a5fcc; }
   code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
-  #en { display: none; }
+  hr.lang-sep { margin: 4em 0; border: none; border-top: 3px double #ccc; }
 </style>
 </head>
 <body>
 
 <div class="lang-switch">
-  <button id="btn-pl" class="active" onclick="showLang('pl')">Polski</button>
-  <button id="btn-en" onclick="showLang('en')">English</button>
+  <a href="#pl">Polski</a> &nbsp;|&nbsp; <a href="#en">English</a>
 </div>
 
 <div id="pl">
@@ -104,6 +98,8 @@
 <p>W sprawach związanych z prywatnością i danymi osobowymi: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a></p>
 </div>
 
+<hr class="lang-sep">
+
 <div id="en">
 <h1>Privacy Policy — Sudorytm</h1>
 <div class="updated">Last updated: July 9, 2026</div>
@@ -169,15 +165,6 @@
 <h2>9. Contact</h2>
 <p>For privacy and personal data matters: <a href="mailto:lektorplkontakt@gmail.com">lektorplkontakt@gmail.com</a></p>
 </div>
-
-<script>
-function showLang(lang) {
-  document.getElementById('pl').style.display = lang === 'pl' ? '' : 'none';
-  document.getElementById('en').style.display = lang === 'en' ? '' : 'none';
-  document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
-  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-}
-</script>
 
 </body>
 </html>
